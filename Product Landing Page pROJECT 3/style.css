@@ -1,0 +1,186 @@
+body{
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+}
+#header-img{
+    margin-left: 50px;
+    margin-top: 10px;
+    float: left;
+}
+#header{
+    position: fixed;
+}
+#nav-bar{
+    display: flex;
+    float: right;
+    margin-top: -85px;
+    margin-left: 1000px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 23px;
+    padding: 50px;
+    color: black;
+}
+.nav-link:hover{
+    text-shadow: 0 7px 9.896px #686a72,0 -2px 1px #fff;
+}
+.nav-link:visited{
+    color:black;
+}
+.register{
+    text-align: center;
+}
+.register h4{
+   text-align: center;
+   font-size: 25px;
+}
+#email{
+    width: 250px;
+    height: 30px;
+    border:none;
+    border:1px solid black;
+}
+#submit{
+    background-color: greenyellow;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 3px solid gray;
+    padding: 10px 25px;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+#submit:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#submit a{
+    text-decoration: none;
+    color: black;
+}
+.unu{
+    border: 2px solid black;
+}
+.doi{
+    border: 2px solid black;
+}
+.atrei{
+    border: 2px solid black;
+}
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    margin-left: 450px;
+    margin-right: 400px;
+    margin-top: 50px;
+}
+.jos{
+    text-align: center;
+    background-color: 	 #d6d6c2;
+}
+.jos a{
+    text-decoration: none;
+    color: black;
+}
+.prima img{
+    float:left;
+    margin-right: 30px;
+}
+.prima h3 p{
+    float: right;
+}
+
+.doua img{
+    float:left;
+    margin-right: 30px;
+}
+.doua h3 p{
+    float: right;
+}
+
+.trei img{
+    float:left;
+    margin-right: 30px;
+}
+.trei h3 p{
+    float: right;
+}
+#prezentare{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.unu{
+    flex: 33.33%;
+    
+}
+.doi{
+    flex: 33.33%;
+    
+}
+.atrei{
+    flex: 33.33%;
+    
+}
+
+
+@media screen and (max-width: 478px){
+    #nav-bar{
+        flex-direction: column;
+        text-align: center;
+        line-height: 0px;
+        margin-top: 0px;
+        margin-right: 105px;
+        margin-left: -150px;
+    }
+    #header-img{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .nav-link{
+        padding: 25px;
+    }
+    .register h4{
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    #header{
+        margin-left: -20px;
+        position: inherit;
+    }
+    .register{
+        margin-left: -30px;
+    }
+    .content{
+        margin-left: 5px;
+        text-align: center;
+        width: 350px;
+        text-indent: 10px;
+    }
+    .poza{
+        display: none;
+    }
+    #video{
+        width: 350px;
+        margin-left: 3px;
+    }
+    #prezentare{
+        flex-direction: column;
+        width: 350px;
+        margin-left: 3px;
+    }
+    .jos{
+        width: 350px;
+    }
+}
