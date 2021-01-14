@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ora, .minut, .sec{
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    margin: 15px;
+    background-color: #2196f3;
+    color: #fff;
+    transform-origin: center;
+    transform:perspective(800px) rotateY(20deg);
+    transition: 0.5s;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,#0004);
+}
+
+.container:hover .ora{
+    opacity: 0.1;
+}
+.container:hover .minut{
+    opacity: 0.1;
+}
+.container:hover .sec{
+    opacity: 0.1;
+}
+
+.container .ora:hover{
+    transform:perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+.container .minut:hover{
+    transform:perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+.container .sec:hover{
+    transform:perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.hours, .minutes, .secundes{
+    margin-top: 55px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+    height: 48px;
+}
+
+.hour, .minute, .secunde{
+    font-size: 40px;
+}
+
+.data{
+    color: white;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        overflow: hidden;
+        background-color: #060a1f;
+    }
+}
