@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>Joc ping</title>
+</head>
+<body>
+    <div class="fundal clearfix">
+
+        <button class="btn-new hidden1"><i class="ion-ios-plus-outline"></i>New game</button>
+
+        <div class="flex hidden1">
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">PLAYER 1</div>
+            <div class="player-score" id="score-0">43</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">11</div>
+            </div>
+        </div>
+        <img src="dice-5.png" alt="Dice" class="dice" id="dice-1" width="150px" height="auto">
+        <img src="dice-4.png" alt="Dice" class="dice" id="dice-2" width="150px" height="auto">
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">PLAYER 2</div>
+            <div class="player-score" id="score-1">72</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+    </div>
+
+        <div class="flex1">
+        <button class="btn-roll hidden1" ><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-hold hidden1"><i class="ion-ios-download-outline"></i>Hold</button>
+            <h2 class="hidden ">Rotate your phone</h2>
+        <input type="text" placeholder="Winning score" class="final-score hidden1">
+    </div>
+       
+    </div>
+    <script src="dice2.js"></script>
+</body>
+</html>
