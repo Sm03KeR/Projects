@@ -1,0 +1,228 @@
+body{
+    background-color: #ddd8d9;
+    margin: 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+}
+.copy{
+   border:2px solid green;
+   border-top: none;
+   border-radius: 0 0 10px 10px;
+   margin: 0;
+   padding: 5px;
+   margin-top: 10px;
+   transition: all 1s;
+}
+
+  
+
+.hidden{
+    visibility: hidden;
+    transition: all 1s;
+}
+.convert-container{
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    
+}
+.loading-text{
+    position: absolute;
+    font-size: 50px;
+    z-index: 1;
+    color: black;
+    margin-top: -70px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+.btn{
+    width: 33.3%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(69, 19, 79);
+    border-radius: 0 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(226, 239, 222);
+    margin-top: 125px;
+    margin: 0;
+}
+.btn:hover{
+    border: 3px solid black;
+}
+.btn1{
+    width: 33.3%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(113, 137, 248);
+    border-radius: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(226, 239, 222);
+    margin-top: 125px;
+    margin: 0;
+}
+.btn1:hover{
+    border: 3px solid black;
+}
+.btn2{
+    width: 33.4%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:rgb(112, 162, 112);
+    border-radius: 0 0 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(226, 239, 222);
+    margin-top: 125px;
+    margin: 0;
+}
+.btn2:hover{
+    border: 3px solid black;
+}
+.btn-copy{
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color:gray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(226, 239, 222);
+    margin-top: 125px;
+    margin: 0;
+    transition: transform 0.1s ease;
+}
+.btn-copy:hover{
+    border:2px solid black;
+}
+.btn-copy:active{
+    transform: translateY(3px);
+}
+.top{
+    padding: 1rem;
+}
+.text-case{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+.convert-case{
+    margin-top: 50px;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.capitalizee{
+    margin-top: 50px;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.slide_btn{
+    width: 50px;
+
+    text-align: start;
+    border-radius: 20%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    height: 25px;
+    padding: 0;
+    background-color: lightblue;
+}
+.slide_btn_night{
+    background-color:gray;
+}
+.slide_btn1{
+    border-radius: 50%;
+    width: 25px;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+    height: 25px;
+}
+.slide_btn1_press{
+    transform: translateX(24px);
+}
+.slide_btn1_night{
+    background-color: black;
+    border-color: brown;
+    transition: 0.5s;
+}
+.night{
+    background-color: rgb(20, 20, 20);
+    transition: 0.5s;
+    color: white;
+}
+.night1{
+    background-color: gray;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width:600px){
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .convert-container{
+        background-color: transparent;
+        box-shadow:none;
+    border-radius: 0px;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn,.btn1,.btn2{
+        border-radius: 0%;
+        margin: 10px;
+    }
+    .copy{
+        display: none;
+    }
+}

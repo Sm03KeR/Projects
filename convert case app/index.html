@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="convert.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Convert case app</title>
+</head>
+<body>
+    <div class="container">
+
+            <h3>Night Mode</h3>
+            <div class="slide_btn">
+                <button class="slide_btn1"></button>
+            </div>
+            
+    <div class="convert-container">
+       
+        <h3>Convert case app</h3>
+        <div class="top"></div>
+
+        <input type="text" class="text-case" required><br>
+        <p class="convert-case" id="convert-case1" >Your result...</p>
+        <button class="btn-copy" onclick="copyElementText('convert-case1')">Copy To Clipboard</button>
+
+        
+
+        <div class="buttons">
+            <button class="btn">UPPER CASE</button>
+            <button class="btn1">lower case</button>
+            <button class="btn2">Capitalize Case</button>
+        </div>
+        
+    </div>
+    
+    <p class="copy hidden">Copied to Clipboard</p>
+</div>
+<div class="loading-text">0%</div>
+
+    <script src="convert.js"></script>
+</body>
+</html>
