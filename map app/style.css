@@ -1,0 +1,317 @@
+:root {
+    --color-brand--1: #ffb545;
+    --color-brand--2: #00c46a;
+  
+    --color-dark--1: #2d3439;
+    --color-dark--2: #42484d;
+    --color-light--1: #aaa;
+    --color-light--2: #ececec;
+    --color-light--3: rgb(214, 222, 224);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--color-light--2);
+    font-weight: 400;
+    line-height: 1.6;
+    height: 100vh;
+    overscroll-behavior-y: none;
+  
+    background-color: #fff;
+    padding: 2.5rem;
+  
+    display: flex;
+  }
+  
+  /* GENERAL */
+  a:link,
+  a:visited {
+    color: var(--color-brand--1);
+  }
+  
+  /* SIDEBAR */
+  .sidebar {
+    flex-basis: 50rem;
+    background-color: var(--color-dark--1);
+    padding: 3rem 5rem 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  .logo {
+    height: 5.2rem;
+    align-self: center;
+    margin-bottom: 4rem;
+    font-size: 100px;
+  }
+  
+  .workouts {
+    list-style: none;
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .workouts::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .workout {
+    background-color: var(--color-dark--2);
+    border-radius: 5px;
+    padding: 1.5rem 2.25rem;
+    margin-bottom: 1.75rem;
+    cursor: pointer;
+    list-style-type: none;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.75rem 1.5rem;
+  }
+  .workout1{
+    background-color: transparent;
+    list-style-type: none;
+  }
+
+  .workout--running {
+    border-left: 5px solid var(--color-brand--2);
+    list-style-type: none;
+    border-right: 5px solid white;
+  }
+  .workout--running1{
+    border: none;
+   
+  }
+  .workout--cycling {
+    border-left: 5px solid var(--color-brand--1);
+  }
+  
+  .workout__title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    grid-column: 1 / -1;
+  }
+  
+  .workout__details {
+    display: flex;
+    align-items: baseline;
+  }
+  .workout__details1 {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .workout__icon {
+    font-size: 1.8rem;
+    margin-right: 0.2rem;
+    height: 0.28rem;
+  }
+  
+  .workout__value {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .workout__unit {
+    font-size: 1.1rem;
+    color: var(--color-light--1);
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .form {
+    background-color: var(--color-dark--2);
+    border-radius: 5px;
+    padding: 1.5rem 2.75rem;
+    margin-bottom: 1.75rem;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 2.5rem;
+  
+    /* Match height and activity boxes */
+    height: 9.25rem;
+    transition: all 0.5s, transform 1ms;
+  }
+  
+  .form.hidden {
+    transform: translateY(-30rem);
+    height: 0;
+    padding: 0 2.25rem;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+  
+  .form__row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form__row--hidden {
+    display: none;
+  }
+  
+  .form__label {
+    flex: 0 0 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .form__input {
+    width: 100%;
+    padding: 0.3rem 1.1rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--color-light--3);
+    transition: all 0.2s;
+  }
+  
+  .form__input:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .form__btn {
+    background-color: #aaa;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+  }
+  
+  
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: var(--color-light--1);
+    transition: all 0.2s;
+  }
+  
+  .twitter-link:hover,
+  .twitter-link:active {
+    color: var(--color-light--2);
+  }
+  
+  /* MAP */
+  #map {
+    flex: 1;
+    height: 100%;
+    background-color: var(--color-light--1);
+  }
+  
+  /* Popup width is defined in JS using options */
+  .leaflet-popup .leaflet-popup-content-wrapper {
+    background-color: var(--color-dark--1);
+    color: var(--color-light--2);
+    border-radius: 5px;
+    padding-right: 0.6rem;
+  }
+  
+  .leaflet-popup .leaflet-popup-content {
+    font-size: 1.5rem;
+  }
+  
+  .leaflet-popup .leaflet-popup-tip {
+    background-color: var(--color-dark--1);
+  }
+  
+  .running-popup .leaflet-popup-content-wrapper {
+    border-left: 5px solid var(--color-brand--2);
+  }
+  .cycling-popup .leaflet-popup-content-wrapper {
+    border-left: 5px solid var(--color-brand--1);
+  }
+
+
+  .cur-popup .leaflet-popup-content-wrapper {
+    border-left: 5px solid white;
+  }
+
+ .inputText{
+   width: 100px;
+   outline: none;
+   height: 25px;
+   font-family: 'Manrope', sans-serif;
+ }
+ .x-btn{
+   border: none;
+   background-color: transparent;
+   width: 20px;
+   cursor: pointer;
+   color:red;
+   outline: none;
+   /*
+   margin-left: 200px;
+   margin-top: -73px;
+  */
+
+  font-size: 25px;
+  
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 15px;
+  
+  transition: all 0.5s ease-in-out;
+ }
+ .x-btn:hover{
+   transform: rotate(180deg);
+ }
+ .note{
+   margin-top: 20px;
+   text-align: center;
+   font-size: 10px;
+ }
+ .animatie{
+  transform: translateX(20rem) ;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.act{
+  text-align: center;
+}
+.delete_all{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.delete_text{
+  margin-top: 6px;
+  transition: transform 0.5s;
+}
+.delete_text:hover{
+  transform: translateX(10px);
+}
+.responsive{
+  text-align: center;
+  display: none;
+  font-size: 25px;
+  color:orange;
+}
+
+@media screen and (max-width:600px){
+  .responsive{
+    display: block;
+  }
+}
