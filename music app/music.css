@@ -1,0 +1,104 @@
+body{
+    background-color:rgb(7, 43, 56);
+    font-family: 'Poppins', sans-serif;
+}
+.prima_linie,.doi_linie,.trei_linie{
+    display: flex;
+}
+.q,.w,.e,.a,.s,.d,.z,.x,.c{
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+     box-shadow: black 0px 20px 30px -10px;
+}
+.q:active{
+    background-color: yellow;
+}
+.w:active{
+    background-color: yellow;
+}
+.e:active{
+    background-color: yellow;
+}
+.a:active{
+    background-color: yellow;
+}
+.s:active{
+    background-color: yellow;
+}
+.d:active{
+    background-color: yellow;
+}
+.z:active{
+    background-color: yellow;
+}
+.x:active{
+    background-color: yellow;
+}
+.c:active{
+    background-color: yellow;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+
+.taste_apasate{
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+.volume{
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    margin-top: 20px;
+    outline: none;
+}
+.volume::after{
+    content: '100';
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    left: 57%;
+}
+.volume::before{
+    content: '0';
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    right: 57%;
+}
+
+.color{
+    background-color: yellow;
+}
+.volume1{
+    text-align: center;
+}
+.a1,.a2{
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    .volume::after{
+        left: 85%;
+    }
+    .volume::before{
+        right:85%;
+    }
+}
