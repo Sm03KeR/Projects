@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="titlu">To do list</h1>
+            <h3 class="date"></h3>
+        </header>
+
+        <div class="todo">
+            <div class="form">
+                <input type="text" class="todo-input">
+                <button class="todo-button"><span class="material-icons">add_circle_outline</span></button>
+            </div>
+
+            <div class="select">
+                <select class="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+            <p class="local">*local storage included*</p>
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <script src="app.js"></script>
+</body>
+</html>

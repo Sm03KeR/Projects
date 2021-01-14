@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    background-image: url("poza.jpg");
+font-family: 'Poppins', sans-serif;
+}
+
+.date{
+    text-align: center;
+}
+.titlu{
+    text-align: center;
+}
+.container{
+    border: 1px solid gray;
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.form{
+    font-size: 1.2rem;
+    border: none;
+    background:white;
+}
+.todo-input{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+.todo-button{
+    color: orange;
+    background: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition:  all 0.3s ease;
+}
+.todo-button:hover{
+    background: orange;
+    color: white;
+}
+.newTodo{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.completButton{
+    border: none;
+    background-color: green;
+    color:white;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    font-size: 2rem;
+}
+.deleteButton{
+    height: 35px;
+    border: none;
+    background-color: red;
+    color:white;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.todo-container{
+    display: flex;
+}
+.todo-list{
+    margin-left: -30px;
+    list-style: none;
+}
+.todoDiv{
+    height: 35px;
+    width: 320px;
+    background:wheat;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    transition: all 0.3s ease; /*tranzitia de la apasarea butonul de facut(ala cu verde)*/
+}
+.todoDiv li{
+    flex: 1;   /* daca ii dau flex 1 o sa se apropie cele 2 iconite */
+}
+
+.completButton-press{
+    opacity: 0.1;
+    text-decoration: line-through;
+    
+}
+.animatie{
+    transform: translateX(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.select{
+    text-align: center;
+    margin-top: 10px;
+}
+select{
+    border: none;
+    outline: none;
+    color:orange;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.local{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px){
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+    .container{
+        border:none;
+    }
+}
