@@ -1,0 +1,30 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(191, 190, 205);
+}
+table {
+    width: 100%;
+    border: 2px gray;
+}
+
+.container {
+    width: 320px;
+    background-color: white;
+    margin: 120px auto;
+    margin-top: 10%;
+}
+button{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    height: 70px;
+    font-size: 25px;
+}
+.calcul{
+    height: 100px;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 40px;
+}
