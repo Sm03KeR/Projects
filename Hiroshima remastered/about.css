@@ -1,0 +1,201 @@
+body{
+    background-image: url("background_about.jpg");
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.nav-area{
+    background: transparent;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+.logo{
+    margin: 0 50px;
+    height: 60px;
+    float: left;
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: goldenrod;
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.logo a:hover{
+    color: black;
+}
+.menu-area{
+    float: right;
+    margin: 10px;
+
+}
+.menu-area li{
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+}
+.menu-area li li{
+    display: block;
+}
+.menu-area ul{
+    display: none;
+    position: absolute;
+    
+}
+@keyframes animatie{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.menu-area li:hover ul{
+    display: block;
+    animation: animatie 2s;
+}
+.menu-area ul li{
+    position: relative;
+    text-align: center;
+    margin-left: -165px;
+    width: 350px;
+}
+
+.menu-area li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.menu-area li a:hover{
+    color: goldenrod;
+}
+.about{
+    width: 600px;
+    height: 100px;
+    transform: translate(250px,100px);
+    font-size: 7rem;
+    color: gray;
+    opacity: 0.2;
+    transition: 1s;
+}
+.text{
+    position: absolute;
+    background-color: grey;
+    top: 30%;
+    left: 30%;
+    width: 700px;
+    height: 300px;
+    transition: 1s;
+    box-shadow: 9px 9px 5px black;
+    z-index: 1;
+    opacity: 0.7;
+    transition: 1s;
+    animation: animatiee 2s;
+}
+.text1{
+    position: absolute;
+    background-color: grey;
+    top: 50%;
+    left: 55%;
+    width: 400px;
+    height: 200px;
+    opacity: 0.2;
+    animation: animatieee 2s;
+}
+.poza{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 48%;
+    opacity: 1;
+    animation: animatiee1 2s;
+    
+}
+.descriere{
+    font-size: 2rem;
+    text-indent: 20px;
+    text-align: center;
+    animation: animatiee 2s;
+}
+@keyframes animatiee{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+@keyframes animatieee{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.2;
+    }
+}
+@keyframes animatieee1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:600px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    .menu-area li a{
+        font-size: 24px;
+    }
+    .logo a{
+        margin-left: 30px;
+    }
+    .menu-area ul{
+        z-index: 1;
+    }
+    .menu-area li{
+        display: list-item;
+        margin-right: 110px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .about{
+        transform: translate(30px,155px);
+        font-size: 70px;
+    }
+    .text{
+        width: 360px;
+        left: 3%;
+        top: 50%;
+    }
+    .text1{
+        left: 2%;
+        top: 75%;
+        width: 360px;
+    }
+    .poza{
+        top: 50%;
+        left: 35%;
+    }
+    .descriere{
+        font-size: 25px;
+    }
+}

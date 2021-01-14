@@ -1,0 +1,144 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(backalb.jpg);
+}
+.titlu{
+    text-align: center;
+    animation: titlu 3s;
+}
+@keyframes titlu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.lista li{
+    list-style-type: none;
+    font-weight: bold;
+    text-align: center;
+    animation: lista 3s;
+}
+@keyframes lista{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.paragraf{
+    text-align: center;
+    font-weight: bold;
+    text-indent: 30px;
+    margin-left:350px ;
+    margin-right:350px ;
+    animation: paragraf 3s;
+}
+@keyframes paragraf{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.poz{
+    text-align: center;
+    animation: poz 3s;
+}
+@keyframes poz{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.meniu{
+    text-align: center;
+    margin-top: 40px;
+    animation: meniu 3s;
+ }
+ @keyframes meniu{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+ .acasa a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    animation: acasa 3s;
+}
+@keyframes acasa{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.acasa{
+    text-align: center;
+}
+.acasa a:hover{
+    color: goldenrod;
+}
+.japonia{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
+    animation: japonia 3s;
+}
+@keyframes japonia{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:600px)
+{
+    body{
+        overflow: visible;
+    }
+    .titlu{
+        font-size: 22px;
+        text-align: center;
+        width: 350px;
+    }
+    .paragraf{
+        margin-left: 10px;
+        text-align: center;
+        width: 350px;
+        text-indent: 10px;
+    }
+    .japonia{
+        width: 350px;
+        margin-left: 10px;
+    }
+    .lista li{
+        margin-left: -30px;
+        text-align: center;
+        width: 350px;
+        text-indent: 10px;
+    }
+    .meniu{
+        margin-left: 10px;
+        margin-top: 70px;
+    }
+    .acasa {
+        margin-left: 15px;
+    }
+}

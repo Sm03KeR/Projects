@@ -1,0 +1,176 @@
+body{
+    background-image: url("contact-us-background.webp");
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.nav-area{
+    background: transparent;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    margin: 0 50px;
+    height: 60px;
+    float: left;
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: goldenrod;
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.logo a:hover{
+    color: black;
+}
+.menu-area{
+    float: right;
+    margin: 10px;
+}
+.menu-area li{
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+    
+}
+.menu-area li li{
+    display: block;
+}
+.menu-area ul{
+    display: none;
+    position: absolute;
+    
+}
+@keyframes animatie{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.menu-area li:hover ul{
+    display: block;
+    animation: animatie 2s;
+}
+.menu-area ul li{
+    position: relative;
+    text-align: center;
+    margin-left: -165px;
+    width: 350px;
+}
+.menu-area li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.menu-area li a:hover{
+    color: goldenrod;
+}
+.text{
+    position: absolute;
+    background-color: grey;
+    opacity: 0.5;
+    top: 30%;
+    left: 65%;
+    width: 500px;
+    height: 550px;
+    animation: animatiee 2s;
+    border-radius: 20%;
+}
+.text h2{
+    text-align: center;
+    animation: animatiee1 2s;
+}
+.img1{
+    position: absolute;
+    transition: 0.5s;
+    bottom: 30px;
+    left: 60px;
+}
+.img1:hover{
+    background-color: blue;
+}
+.img2{
+    transition: 0.5s;
+    position: absolute;
+    bottom: 30px;
+    left: 230px;
+}
+.img2:hover{
+    background-color: blue;
+}
+.fa-instagram{
+    transition: 0.5s;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+.fa-instagram:hover{
+background-color: black;
+}
+.text p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    animation: animatiee1 2s;
+}
+@keyframes animatiee{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.5;
+    }
+}
+@keyframes animatiee1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:600px)
+{
+    body{
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .logo a{
+        margin-left: 30px;
+    }
+    .menu-area ul{
+        z-index: 1;
+    }
+    .menu-area li{
+        display: list-item;
+        margin-right: 110px;
+        text-align: center;
+        list-style-type: none;
+    }
+    .text{
+        left: 4%;
+        width: 350px;
+        top: 50%;
+        height: 450px;
+    }
+    .fa-instagram{
+        right: 45%;
+        bottom: 20%;
+    }
+}
