@@ -1,0 +1,33 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(255,0,0);
+}
+.btn{
+    margin: 0;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, border 0.3s, transform 0.1s;
+    transition: 1s;
+    outline: none;
+    box-shadow: 5px 5px 5px black;
+    border: 3px solid black;
+}
+.btn:active{
+    transform: translateY(20px);
+}
+ .culoare{
+    margin: 0;
+    color: white;
+    font-size: 25px;
+ }
+ .text{
+     position: relative;
+     text-align: center;
+     margin-top: 20%;
+ }
